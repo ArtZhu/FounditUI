@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/user_profile_height"
+
+    android:orientation="horizontal"
+
+    android:theme="@style/gray_style">
+
+    <ImageView
+        android:id="@+id/button_back"
+        android:layout_width="@dimen/backbutton_width"
+        android:layout_height="@dimen/backbutton_height"
+        android:src="@drawable/back_button"
+
+        android:layout_margin="@dimen/margin_small"
+        ></ImageView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/user_profile_height"
+        android:background="@drawable/roundedcorner_rect_80"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/user_profile_height"
+
+            android:hint="1"
+
+            android:gravity="center"
+
+            android:paddingTop="@dimen/margin_small"
+            android:paddingBottom="@dimen/margin_small"
+            android:textSize="@dimen/text_large"/>
+        <!--
+        <ImageView
+            android:id="@+id/user_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/user_profile_height"
+            android:layout_toRightOf="@id/user_name"
+
+            android:paddingRight="@dimen/margin_small"
+            android:paddingLeft="@dimen/margin_small"
+
+            android:src="@mipmap/ic_launcher"
+
+            android:scaleType="fitXY"
+            />
+            -->
+
+        <!--
+        <ImageView
+
+            android:id="@+id/user_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/user_profile_height"
+
+            android:layout_alignParentRight="true"
+
+            android:paddingRight="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/margin_large"
+
+            android:src="@mipmap/ic_launcher"
+
+            android:scaleType="fitXY"/>
+            -->
+
+
+    </RelativeLayout>
+</LinearLayout>

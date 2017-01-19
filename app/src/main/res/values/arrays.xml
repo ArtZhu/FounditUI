@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="phone_colors">
+        <item>Black</item>
+        <item>Gold</item>
+        <item>Rose</item>
+        <item>White</item>
+        <item>Gray</item>
+    </string-array>
+
+    <string-array name="dog_colors">
+        <item>Black</item>
+        <item>White</item>
+        <item>Brown</item>
+    </string-array>
+
+</resources>

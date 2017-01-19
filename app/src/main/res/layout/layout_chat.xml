@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    android:background="@color/gray_bar_default">
+
+
+    <ListView
+        android:id="@+id/chat_box"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="85"
+
+        android:layout_marginTop="@dimen/user_profile_total_height"
+     >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@drawable/roundedcorner_rect_50">
+
+        <EditText
+            android:id="@+id/input_box"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:singleLine="true"
+
+            android:layout_marginLeft="@dimen/margin_small"
+            android:imeOptions="actionDone"
+            android:gravity="bottom"/>
+
+        <TextView
+            android:id="@+id/button_send"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_small"
+
+            android:layout_weight="3"
+            android:background="@drawable/roundedcorner_rect_80_10dp"
+            android:gravity="center"
+            android:text="@string/send"
+
+            android:textSize="@dimen/text_medium"/>
+
+    </LinearLayout>
+
+</LinearLayout>

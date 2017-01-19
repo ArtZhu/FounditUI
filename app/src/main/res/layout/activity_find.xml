@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/layout_find_main"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="cuilinchen.tianezhu.foundit.LostNFound.FindActivity"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+            <TextView
+                android:id="@+id/category_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:paddingTop="@dimen/margin_medium_large"
+                android:hint="category"
+                android:gravity="center"
+                android:textSize="@dimen/text_large"/>
+            <ImageView
+                android:id="@+id/imgbutton_back"
+                android:layout_width="@dimen/backbutton_width"
+                android:layout_height="@dimen/backbutton_height"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:layout_marginTop="@dimen/margin_medium"
+
+                android:src="@drawable/back_button">
+
+            </ImageView>
+
+            <AutoCompleteTextView
+                android:id="@+id/textinput_item_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+
+                android:textSize="@dimen/questionnaire_title_textsize"
+
+                android:singleLine="true"
+                android:lines="1"
+                android:maxLines="1"
+
+                android:ellipsize="start"
+
+                android:imeOptions="actionDone"
+
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                />
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <include layout="@layout/content_find"
+             android:id="@+id/content_find"
+        />
+
+</android.support.design.widget.CoordinatorLayout>

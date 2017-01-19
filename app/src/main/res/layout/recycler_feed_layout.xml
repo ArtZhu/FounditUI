@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/recycler_feeds_layout_height">
+
+    <ImageView
+        android:id="@+id/recycler_img"
+        android:layout_width="@dimen/recycler_feeds_layout_height"
+        android:layout_height="match_parent"
+
+        android:padding="@dimen/margin_small"
+        android:src="@drawable/showfeeds"/>
+
+    <TextView
+        android:id="@+id/recycler_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_small"
+
+        android:layout_toRightOf="@id/recycler_img"
+
+        android:textSize="@dimen/feedlist_title_size"
+
+        android:hint="title"/>
+
+    <TextView
+        android:id="@+id/recycler_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/recycler_img"
+        android:layout_alignParentBottom="true"
+
+        android:padding="@dimen/margin_small"
+
+        android:textSize="@dimen/feedlist_detail_size"
+
+        android:hint="detail"/>
+
+    <TextView
+        android:id="@+id/recycler_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+
+        android:padding="@dimen/margin_small"
+
+        android:textSize="@dimen/feedlist_time_size"
+
+        android:hint="time"/>
+
+</RelativeLayout>

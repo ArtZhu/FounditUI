@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    android:background="@drawable/roundedcorner_rect_80_10dp">
+
+    <TextView
+        android:id="@+id/contact_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:gravity="center"
+        android:singleLine="true"
+
+        android:textSize="@dimen/text_medium_large"
+        android:hint="@string/contactbutton"/>
+</RelativeLayout>

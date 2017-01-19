@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.cuilinchen.mappart"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Google Maps Fragment API Key Data -->
+        <!--
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBpw2oQWSPcCCohStyPWlJVUKDx1ARs_e0"/>
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBpw2oQWSPcCCohStyPWlJVUKDx1ARs_e0"/>
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <!--
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key"/>
+        -->
+        <activity
+            android:name=".LoadingScreenActivity"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!--  -->
+
+            <!-- HELLO -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+
+        </activity>
+        <activity
+            android:name=".settings.activity.FlowSettingActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_flow_setting"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".foundit.lostNFound.FindActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".foundit.lostNFound.FoundActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".feedactivity.FeedActivity"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".FeedActivity"/>
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable"/>
+        </activity>
+        <activity
+            android:name=".locationrelatedfeeds.LocationRelatedFeedsActivity"
+            android:label="@string/title_activity_location_related_feeds"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".FeedDetailActivity.DetailActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+
+
+        <!-- MISCELLANEOUS -->
+        <provider
+            android:name=".MapPlaceProvider"
+            android:authorities="com.cuilinchen.mappart.MapPlaceProvider"
+            android:exported="false"/>
+
+        <service
+            android:name=".services.BackgroundFeedRetrieverService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+        <service
+            android:name=".services.FeedRetrieverService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+
+        <receiver android:name=".services.receiver.BackgroundStartingReceiver">
+            <intent-filter>
+                <action android:name="START_BACKGROUND_RETRIEVE"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".login.LoginActivity"
+            android:label="@string/title_activity_login">
+        </activity>
+    </application>
+
+</manifest>

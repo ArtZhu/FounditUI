@@ -1,0 +1,57 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/gray_bar_default</item>
+        <item name="colorPrimaryDark">@color/gray_bar_default</item>
+        <item name="colorAccent">@color/line_color</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="gray_style" parent="AppTheme">
+        <!--
+        <item name="android:colorPrimary">@color/gray_bar_default</item>
+        <item name="android:colorPrimaryDark">@color/gray_default</item>
+        -->
+    </style>
+
+    <style name="blue_style" parent="AppTheme">
+        <!--
+        <item name="android:colorPrimary">@color/blue_bar_user_choice</item>
+        <item name="android:colorPrimaryDark">@color/blue_user_choice</item>
+        -->
+    </style>
+
+    <style name="pink_style" parent="AppTheme">
+        <!--
+        <item name="android:colorPrimary">@color/pink_bar_user_choice</item>
+        <item name="android:colorPrimaryDark">@color/pink_user_choice</item>
+        <item name="android:color">@color/pink_user_choice</item>
+        -->
+    </style>
+
+</resources>

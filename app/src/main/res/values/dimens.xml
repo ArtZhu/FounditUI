@@ -1,0 +1,73 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+
+    <!-- CHOICE -->
+    <dimen name="choice_text_title_textsize">10dp</dimen>
+    <dimen name="choice_text_content_textsize">18dp</dimen>
+
+
+    <!-- FindFoundScreen -->
+    <dimen name="FindFoundScreen_padding">20dp</dimen>
+    <dimen name="FindFoundScreen_TextSize">40dp</dimen>
+
+    <!-- Questionnaire -->
+    <dimen name="questionaire_horizontal_indent">50dp</dimen>
+    <dimen name="questionnaire_title_textsize">25dp</dimen>
+    <dimen name="questionnaire_choices_textsize">20dp</dimen>
+
+    <!-- Find Screen -->
+    <dimen name="autocomplete_item_choice_margin">60dp</dimen>
+    <dimen name="questionform_edge">15dp</dimen>
+    <dimen name="next_button_actual_width">150dp</dimen>
+    <dimen name="dropdowntext_size">20dp</dimen>
+
+    <!-- submission snackbar -->
+    <dimen name="submission_snackbar_height">15dp</dimen>
+
+    <!-- miscellaneous -->
+    <dimen name="snackbar_textsize">18dp</dimen>
+
+    <!-- sample -->
+    <dimen name="margin_tiny">4dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_medium_large">24dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="margin_huge">64dp</dimen>
+
+    <dimen name="backbutton_width">53dp</dimen>
+    <dimen name="backbutton_height">41dp</dimen>
+
+
+    <dimen name="text_small">8dp</dimen>
+    <dimen name="text_medium_small">16dp</dimen>
+    <dimen name="text_medium">16dp</dimen>
+    <dimen name="text_medium_large">20dp</dimen>
+    <dimen name="text_large">24dp</dimen>
+    <dimen name="text_huge">30dp</dimen>
+
+    <dimen name="feedlist_title_size">22dp</dimen>
+    <dimen name="feedlist_detail_size">18dp</dimen>
+    <dimen name="feedlist_time_size">13dp</dimen>
+    <dimen name="feedlist_slot_height">70dp</dimen>
+
+    <dimen name="showlist_fab_margin_right">11dp</dimen>
+    <dimen name="showlist_fab_margin_bottom">60dp</dimen>
+
+    <dimen name="recycler_feeds_layout_height">87dp</dimen>
+
+    <dimen name="recycler_list_height">1000dp</dimen>
+    <dimen name="detail_icon_height">100dp</dimen>
+
+    <dimen name="user_profile_total_height">57dp</dimen>
+    <dimen name="user_profile_height">57dp</dimen>
+</resources>

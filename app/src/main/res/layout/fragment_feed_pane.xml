@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <!--
+    <TextView
+        android:id="@+id/pager_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="label"
+        android:textSize="@dimen/text_medium_large"/>
+        -->
+
+    <View
+        android:id="@+id/map_enabler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"/>
+
+
+    <TextSwitcher
+        android:id="@+id/pager_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundedcorner_rect_100_10dp"
+        android:layout_weight="1"
+        >
+
+        <!--
+        <TextView
+            android:id="@+id/switchtv_1"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+
+            android:textSize="@dimen/text_medium_large"
+
+            android:gravity="center"
+
+            android:hint="@string/found_string"/>
+
+        <TextView
+            android:id="@+id/switchtv_2"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+
+            android:textSize="@dimen/text_medium_large"
+
+            android:gravity="center"
+
+            android:hint="@string/find_string"/>
+            -->
+    </TextSwitcher>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_feed"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:background="@color/transparent_80"
+        android:layout_alignParentBottom="true">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

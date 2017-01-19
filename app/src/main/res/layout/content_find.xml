@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    >
+
+    <android.support.v4.widget.NestedScrollView android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+
+                                                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                                                tools:context="cuilinchen.tianezhu.foundit.LostNFound.FindActivity"
+                                                tools:showIn="@layout/activity_find">
+
+
+        <ListView
+            android:id="@+id/listview_questions"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:layout_margin="@dimen/questionform_edge"
+            android:layout_marginRight="@dimen/questionform_edge"
+            ></ListView>
+
+    </android.support.v4.widget.NestedScrollView>
+</FrameLayout>
+
+-->
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="cuilinchen.tianezhu.foundit.LostNFound.FindActivity"
+    tools:showIn="@layout/activity_find"
+    android:background="@color/gray_default">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+
+        <ListView
+            android:id="@+id/listview_questions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/questionform_edge"
+            android:layout_marginLeft="@dimen/questionform_edge"
+            android:layout_marginRight="@dimen/questionform_edge"
+            android:layout_marginBottom="@dimen/questionform_edge"
+
+            android:background="@drawable/roundedcorner_rect_50"
+            ></ListView>
+
+        <TextView
+            android:id="@+id/button_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="bottom"
+
+            android:layout_marginLeft="@dimen/questionform_edge"
+            android:layout_marginRight="@dimen/questionform_edge"
+
+            android:paddingTop="@dimen/questionform_edge"
+            android:paddingBottom="@dimen/questionform_edge"
+
+            android:text="@string/send"
+            android:textAlignment="center"
+            android:textSize="@dimen/questionnaire_title_textsize"
+
+            android:background="@drawable/roundedcorner_rect_80"
+
+            android:layout_below="@id/listview_questions"/>
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

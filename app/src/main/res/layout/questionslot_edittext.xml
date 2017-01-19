@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/slot_tv_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/questionform_edge"
+        android:paddingLeft="@dimen/questionform_edge"
+        android:paddingRight="@dimen/questionform_edge"
+        android:hint="title"
+
+        android:textSize="@dimen/questionnaire_title_textsize"
+        android:gravity="center_vertical"
+
+        android:focusable="false"/>
+
+    <EditText
+        android:id="@+id/slot_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/questionaire_horizontal_indent"
+        android:layout_marginRight="@dimen/questionform_edge"
+
+        android:textSize="@dimen/questionnaire_choices_textsize"
+
+        android:singleLine="true"
+        android:maxLines="1"/>
+
+</LinearLayout>
+

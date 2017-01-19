@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/feedlist_slot_height"
+                android:background="@drawable/roundedcorner_rect_80_10dp"
+                android:elevation="10dp"
+                android:layout_margin="@dimen/margin_small"
+                android:paddingBottom="@dimen/margin_small"
+                android:paddingRight="@dimen/margin_small"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/camera_mover"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"/>
+
+        <View
+            android:id="@+id/detail_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageview_feed_list_slot"
+        android:layout_width="@dimen/feedlist_slot_height"
+        android:layout_height="@dimen/feedlist_slot_height"
+
+        android:src="@drawable/ic_menu_camera"/>
+
+    <TextView
+        android:id="@+id/textview_feed_list_slot_TITLE"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageview_feed_list_slot"
+        android:layout_alignParentTop="true"
+
+        android:singleLine="true"
+
+        android:textSize="@dimen/feedlist_title_size"
+        android:hint="TITLE"/>
+
+    <TextView
+        android:id="@+id/textview_feed_list_slot_DETAIL"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_toRightOf="@id/imageview_feed_list_slot"
+        android:layout_below="@id/textview_feed_list_slot_TITLE"
+        android:layout_alignParentBottom="true"
+
+        android:singleLine="true"
+
+        android:gravity="bottom"
+        android:textSize="@dimen/feedlist_detail_size"
+        android:hint="DETAIL"/>
+
+    <TextView
+        android:id="@+id/textview_feed_list_slot_TIME"
+
+        android:layout_marginRight="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+
+        android:layout_alignParentEnd="true"
+
+        android:singleLine="true"
+
+        android:textSize="@dimen/feedlist_time_size"
+        android:hint="TIME"/>
+
+
+
+</RelativeLayout>
